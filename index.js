@@ -210,11 +210,12 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
+function miles(kilometers){
   /*add your code here*/
+  return kilometers * 0.621371;
 }
 
-
+console.log(miles(55));
 
 //Task 5b - Feet to CM
 /*
@@ -224,11 +225,12 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
+function feet(centimeters){
   /*add your code here*/
+  return centimeters * 0.0328084;
 }
 
-
+console.log(feet(1234));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -240,9 +242,14 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
+function annoyingSong(startNum){
       /*add your code here*/
+      for(let i= startNum; i>0; i--){
+        return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i-1} bottles of soda on the wall`;
+      }
 }
+
+console.log(annoyingSong(10));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
