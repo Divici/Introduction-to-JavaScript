@@ -166,28 +166,38 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-let compChoice = Math.ceil(Math.random()*3);
+let randomChoice = Math.ceil(Math.random()*3);
 //1 is rock, 2 is paper, 3 is scissors
+let compChoice = '';
+if(randomChoice === 1){
+  compChoice = 'rock';
+}
+else if(randomChoice === 2){
+  compChoice = 'paper';
+}
+else{
+  compChoice = 'scissors';
+}
 const userChoice = 'paper';
 
 function game(user, computer){
   /*add your code here*/
-  if (user==='rock' && computer===2){
+  if (user==='rock' && computer==='paper'){
     return "you lose!";
   }
-  else if (user==='rock' && computer===3){
+  else if (user==='rock' && computer==='scissors'){
     return "you win!";
   }
-  else if (user==='paper' && computer===1){
+  else if (user==='paper' && computer==='rock'){
     return "you win!";
   }
-  else if (user==='paper' && computer===3){
+  else if (user==='paper' && computer==='scissors'){
     return "you lose!";
   }
-  else if (user==='scissors' && computer===1){
+  else if (user==='scissors' && computer==='rock'){
     return "you lose!";
   }
-  else if (user==='scissors' && computer===2){
+  else if (user==='scissors' && computer==='paper'){
     return "you win!";
   }
   else{
@@ -227,10 +237,10 @@ Using the feet function below do the following:
 
 function feet(centimeters){
   /*add your code here*/
-  return centimeters * 0.0328084;
+  return centimeters * 0.032808;
 }
 
-console.log(feet(1234));
+console.log(feet(1524));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -273,13 +283,13 @@ function grade(grade){
     return 'you got an A';
   }
   else if( grade <90 && grade>=80){
-    return 'you got an B';
+    return 'you got a B';
   }
   else if( grade <80 && grade>=70){
-    return 'you got an C';
+    return 'you got a C';
   }
   else if( grade <70 && grade>=60){
-    return 'you got an D';
+    return 'you got a D';
   }
   else {
     return 'you got an F';
