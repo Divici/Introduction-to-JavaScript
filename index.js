@@ -19,7 +19,10 @@ Do the following:
 
    HINT: no function required
 */
-
+const votingAge = 18;
+if ( votingAge === 18){
+  console.log('true');
+}
 
 
 /*
@@ -32,10 +35,13 @@ Do the following:
 
    HINT: no function required
 */
+let var1= 'I see now';
+const var2= 'I also see';
 
-
-
-
+if (var1 !== var2){
+  var1=var2;
+}
+console.log(var1);
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -47,7 +53,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+let numStr = '1993';
+console.log(Number(numStr));
 
 
 
@@ -60,10 +67,12 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
+function multiply(a,b){
   /*add your code here*/
+  return a * b; 
 }
 
+console.log(multiply(5,4));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
