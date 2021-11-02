@@ -166,10 +166,36 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let compChoice = Math.ceil(Math.random()*3);
+//1 is rock, 2 is paper, 3 is scissors
+const userChoice = 'paper';
 
 function game(user, computer){
   /*add your code here*/
+  if (user==='rock' && computer===2){
+    return "you lose!";
+  }
+  else if (user==='rock' && computer===3){
+    return "you win!";
+  }
+  else if (user==='paper' && computer===1){
+    return "you win!";
+  }
+  else if (user==='paper' && computer===3){
+    return "you lose!";
+  }
+  else if (user==='scissors' && computer===1){
+    return "you lose!";
+  }
+  else if (user==='scissors' && computer===2){
+    return "you win!";
+  }
+  else{
+    return "it's a tie";
+  }
 }
+
+console.log(game(userChoice, compChoice));
 
 
 
