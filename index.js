@@ -237,10 +237,10 @@ Using the feet function below do the following:
 
 function feet(centimeters){
   /*add your code here*/
-  return centimeters * 0.032808;
+  return centimeters * 0.03280839895013123;
 }
 
-console.log(feet(1524));
+console.log(feet(30.48));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
